@@ -1,0 +1,49 @@
+POST http://localhost:8083/api/session/register
+Content-Type: application/json
+
+{    
+    "first_name": "Dia",
+    "last_name": "herre",
+    "email":"daiu@gmail.com", 
+"password": "3234"
+}
+###
+//CREAR UN USUARIO
+POST http://localhost:8083/api/users
+Content-Type: application/json
+
+{    
+    "first_name": "mariana",
+    "last_name": "arco",
+    
+    "password": "1234"
+}
+
+###
+//CREAR UN PRODUCTO
+
+POST http://localhost:8083/api/products
+Content-Type: application/json
+
+{
+    "title": "BOTAS NEGRAS ALTAS"
+}
+
+###
+
+
+POST http://localhost:8083/api/session/login
+Content-Type: application/json
+
+
+{"email":"daiu@gmail.com", 
+"password": "3234"
+}
+###
+
+POST http://localhost:8083/api/carts/65fb20a80f19ae91277ef67d/products/65ac056d91a6826fb3a01315
+###
+GET http://localhost:8083/api/session/current
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiVVNFUiIsImlhdCI6MTcxMTEzNDM2OSwiZXhwIjoxNzExMjIwNzY5fQ.0-70d1LLCh98N1dScwI47ssgS5bp4bBBpJKs6MqhvL0
+
